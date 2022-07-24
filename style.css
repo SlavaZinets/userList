@@ -1,0 +1,56 @@
+[data-theme = 'dark'] {
+--bgBody:#131313;
+--textColor:#fff;
+}
+
+[data-theme = 'white'] {
+    --bgBody:#fff;
+    --textColor:#131313;
+    }
+
+body {
+margin: 0 200px;
+font-family: 'Roboto', sans-serif;
+font-size: 18px;
+font-weight: 400;
+background: #131313;
+color: var(--textColor);
+}
+
+.userList {
+    list-style: none;
+    padding: 0;
+    margin-top: 50px;
+}
+
+.liPhoto {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--bgBody);
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.userLi {
+    display: flex;
+    align-items: center;
+}
+
+.userLi + .userLi {
+    margin-top: 20px;
+}
+
+.liName {
+    width: 400px;
+    margin-right: 20px;
+}
+
+.liMail {
+    font-size: 16px;
+    font-style: italic;
+}
